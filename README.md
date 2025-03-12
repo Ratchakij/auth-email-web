@@ -14,6 +14,26 @@ If you are developing a production application, we recommend using TypeScript an
 
 # Setup Project
 npm create vite@latest auth-email-web -- --template react-swc
-cd auth-email-web
-npm install
-npm run dev
+npm install tailwindcss @tailwindcss/vite
+
+## Install Tailwind CSS
+1. Add the @tailwindcss/vite plugin to vite.config.js
+    import tailwindcss from '@tailwindcss/vite'
+    export default defineConfig({
+      plugins: [
+        tailwindcss(),
+      ],
+    })
+
+2. Add an @import to your CSS file that imports Tailwind CSS.
+    @import "tailwindcss";
+
+3. Config settings.json for Tailwind CSS IntelliSense
+   "tailwindCSS.includeLanguages": {
+      "html": "html",
+      "javascript": "javascript",
+      "css": "css"
+   },
+   "editor.quickSuggestions": {
+      "strings": true
+   }
