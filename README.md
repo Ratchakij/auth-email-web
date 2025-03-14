@@ -1,5 +1,5 @@
 # React + Vite
-react-swc
+react-swc zustand
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -16,7 +16,7 @@ If you are developing a production application, we recommend using TypeScript an
 npm create vite@latest auth-email-web -- --template react-swc
 npm install tailwindcss @tailwindcss/vite
 
-## Install Tailwind CSS
+<!-- Install Tailwind CSS -->
 1. Add the @tailwindcss/vite plugin to vite.config.js
     import tailwindcss from '@tailwindcss/vite'
     export default defineConfig({
@@ -37,3 +37,13 @@ npm install tailwindcss @tailwindcss/vite
    "editor.quickSuggestions": {
       "strings": true
    }
+
+<!-- npm install -->
+npm i react-router-dom framer-motion lucide-react zustand axios react-hot-toast
+
+build FloatingShape component with framer-motion
+create auth-store
+build features signup and login
+create authentication middleware
+build features email verification
+build features forgot & reset password
